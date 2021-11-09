@@ -1,4 +1,23 @@
 .navbar {
 	grid-area: n;
 	background-color: paleturquoise;
+	padding: 20px;
+}
+
+.item a {
+	color: #555;
+	text-decoration: none;
+}
+
+.item a:hover {
+	font-weight: 500;
+}
+
+.item a.activeLink {
+	color: rgb(0, 0, 0);
+	text-decoration: underline;
+}
+
+.item a.activeLink:hover {
+	font-weight: normal;
 }
