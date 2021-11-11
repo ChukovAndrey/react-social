@@ -15,6 +15,7 @@
 }
 
 .footerContent {
+	color: rgba(0, 0, 0, 0.5);
 	font-size: 12px;
 	padding-top: 10px;
 }
