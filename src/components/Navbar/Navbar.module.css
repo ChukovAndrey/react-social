@@ -1,7 +1,7 @@
 .navbar {
 	grid-area: n;
 	min-width: 120px;
-	background-color: paleturquoise;
+	background-color: #8ce6fd;
 	padding: 20px;
 }
 
