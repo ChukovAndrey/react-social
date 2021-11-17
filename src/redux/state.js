@@ -17,6 +17,9 @@ const messages = [
 	{ id: 3, message: 'BB!' },
 ];
 
-const state = { posts, dialogs, messages };
+const state = {
+	profilePage: { posts },
+	dialogsPage: { dialogs, messages },
+};
 
 export default state;
