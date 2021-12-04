@@ -22,4 +22,13 @@ const state = {
 	dialogsPage: { dialogs, messages },
 };
 
+export const addPost = (postMessage) => {
+	const newPost = {
+		id: state.profilePage.posts.length + 1,
+		message: postMessage,
+		likesCount: 0,
+	}
+	state.profilePage.posts.push(newPost);
+}
+
 export default state;
