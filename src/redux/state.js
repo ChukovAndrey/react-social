@@ -20,7 +20,7 @@ const messages = [
 ];
 
 const state = {
-	profilePage: { posts },
+	profilePage: { posts, newPostText: '' },
 	dialogsPage: { dialogs, messages },
 };
 
@@ -31,6 +31,12 @@ export const addPost = (postMessage) => {
 		likesCount: 0,
 	}
 	state.profilePage.posts.push(newPost);
+	state.profilePage.newPostText = '';
+	renderEntireTree(state);
+}
+
+export const changeNewPostText = (text) => {
+	state.profilePage.newPostText = text;
 	renderEntireTree(state);
 }
 
