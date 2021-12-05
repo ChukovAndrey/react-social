@@ -24,13 +24,15 @@ const state = {
 	dialogsPage: { dialogs, messages },
 };
 
-export const addPost = (postMessage) => {
-	const newPost = {
-		id: state.profilePage.posts.length + 1,
-		message: postMessage,
-		likesCount: 0,
+export const addPost = () => {
+	if (state.profilePage.newPostText) {
+		const newPost = {
+			id: state.profilePage.posts.length + 1,
+			message: state.profilePage.newPostText,
+			likesCount: 0,
+		}
+		state.profilePage.posts.push(newPost);
 	}
-	state.profilePage.posts.push(newPost);
 	state.profilePage.newPostText = '';
 	renderEntireTree(state);
 }
